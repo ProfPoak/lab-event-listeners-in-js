@@ -20,7 +20,8 @@ function resetBackgroundColor() {
 // Function to display the key pressed by the user
 function displayKeyPress(event) {
   // Implement the function to display key pressed
-
+  const keyPress = document.getElementById("keyPressDisplay")
+  keyPress.textContent = `Key pressed: ${event.key}`
 }
 
 // Process Text Input
@@ -28,6 +29,11 @@ function displayKeyPress(event) {
 // Function to display user input in real-time
 function displayUserInput() {
   // Implement the function to display user input
+  const text = document.getElementById("textInput")
+  const textValue = text.value
+  
+  const textDisplay = document.getElementById("textInputDisplay")
+  textDisplay.textContent = `You typed: ${textValue}`
 }
 
 // Attach Event Listeners
