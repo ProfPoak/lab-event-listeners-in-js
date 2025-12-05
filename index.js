@@ -3,6 +3,9 @@
 // Function to change the background color when a button is clicked
 function changeBackgroundColor() {
   // Implement the function to change background color
+  const bodyColor = document.querySelector("body")
+  bodyColor.style.backgroundColor = "rgb(10, 71, 6)"
+
 }
 
 // Function to reset the background color when the body is double-clicked
